@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block customstyle %}
+    <link rel="stylesheet" href="../public/css/style.css">
+{% endblock %}
+
+{% block title %}Enquiry Detail{% endblock %}
+
+{% block newenquirylink %}../submit-enquiry{% endblock %}
+{% block enquirieslink %}../enquiries{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="confirmation d-none" id="enquirybody">
+        <h1>Enquiry</h1>
+        <input type="hidden" id="enquiry-slug" value="{{ slug }}">
+        <div>
+            <span class="fw-light fs-6">Full Name</span>
+            <p id="fullname"></p>
+        </div>
+        <div>
+            <span class="fw-light fs-6">Email</span>
+            <p id="email"></p>
+        </div>
+        <hr>
+        <div>
+            <h3 id="subject"></h3>
+            <p id="message"></p>
+        </div>
+        <hr>
+        <div>
+            <a href="../enquiries" class="btn btn-primary">Back</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="../public/js/enquiry.js"></script>
+{% endblock %}

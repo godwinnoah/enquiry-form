@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block customstyle %}<link rel="stylesheet" href="./public/css/style.css">{% endblock %}
+{% block title %}Enquiries Demonstration{% endblock %}
+
+{% block newenquirylink %}./submit-enquiry{% endblock %}
+{% block enquirieslink %}./enquiries{% endblock %}
+
+{% block content %}
+<main class="form-signin">
+    <form id="enquiry-form">
+      <h1 class="h3 mb-3 fw-normal">Submit Enquiry</h1>
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="firstname" placeholder="">
+        <label for="firstname">First Name</label>
+        <div class="invalid-feedback" id="firstname-feedback"></div>
+      </div>
+
+      <div class="form-floating">
+          <input type="text" class="form-control" id="lastname" placeholder="">
+          <label for="lastname">Last Name</label>
+          <div class="invalid-feedback" id="lastname-feedback"></div>
+      </div>
+
+      <div class="form-floating">
+          <input type="email" class="form-control" id="email" placeholder="">
+          <label for="email">Email Address</label>
+          <div class="invalid-feedback" id="email-feedback"></div>
+      </div>
+
+      <div class="hr my-3"></div>
+
+      <div>
+        <label for="subject">Subject</label>
+          <input type="text" class="form-control" id="subject" placeholder="">
+          <div class="invalid-feedback" id="subject-feedback"></div>
+      </div>
+
+      <div>
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="5"></textarea>
+          <div class="invalid-feedback" id="message-feedback"></div>
+      </div>
+
+      <div class="hr my-3"></div>
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+    </form>
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+<script src="./public/js/starter.js"></script>
+{% endblock %}

@@ -1,0 +1,27 @@
+{
+    "name": "akaninyene/upworkone",
+    "description": "A sample project demonstrating usage of jQuery to submit form in put in JSON format, usage of PHP to receive JSON input into SQLite database, usage of PHP to fetch data from SQLite and serve in JSON, and usage of jQuery to receive and display JSON data on table.",
+    "type": "project",
+    "license": "ISC",
+    "autoload": {
+        "psr-4": {
+            "Akaninyene\\Upworkone\\": "src/",
+            "Rakit\\Validation\\": "vendor/rakit/validation/src/",
+            "Twig\\Loader\\": "vendor/twig/twig/src/Loader"
+        }
+    },
+    "authors": [
+        {
+            "name": "Godwin Noah",
+            "email": "ng@noahgodwin.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "rakit/validation": "dev-master",
+        "bramus/router": "dev-master",
+        "twig/twig": "^3.0",
+        "ramsey/uuid": "4.x-dev",
+        "ausi/slug-generator": "dev-master"
+    }
+}

@@ -1,0 +1,5 @@
+/vendor
+/db/data.db
+/tmp/*
+
+/composer.lock

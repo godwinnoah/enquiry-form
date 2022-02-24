@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block customstyle %}<link rel="stylesheet" href="./public/css/style.css">{% endblock %}
+{% block title %}Enquiries Demonstration{% endblock %}
+
+{% block newenquirylink %}./submit-enquiry{% endblock %}
+{% block enquirieslink %}./enquiries{% endblock %}
+
+{% block content %}
+<div class="confirmation">
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Thank You for Getting In Touch!</h4>
+        <p>One of our consultant will review your enquiries shortly and respond within 24 hours.</p>
+        <hr>
+        <p class="mb-0">Did you forget something? <a href="./enquiries">Submit Another Enquiry</a>.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block customstyle %}<link rel="stylesheet" href="../public/css/style.css">{% endblock %}
+{% block title %}Enquiries List{% endblock %}
+
+{% block newenquirylink %}./submit-enquiry{% endblock %}
+{% block enquirieslink %}./enquiries{% endblock %}
+
+{% block content %}
+<div class="container mt-5 mb-3">
+  <h3>Enquiries</h3>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="./public/js/list.js"></script>
+{% endblock %}
